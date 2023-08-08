@@ -2,7 +2,7 @@ export const StatsList = ({ stats: { followers, views, likes } }) => {
   return (
     <ul className="stats">
       <li>
-        <span className="label">Followers</span>
+        <span className="label">followers</span>
         <span className="quantity">{followers}</span>
       </li>
       <li>

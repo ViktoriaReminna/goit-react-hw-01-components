@@ -1,4 +1,5 @@
-import StatsList from './StatsList';
+import { StatsList } from '../StatsList/StatsList';
+
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
