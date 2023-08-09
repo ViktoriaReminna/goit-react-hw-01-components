@@ -22,9 +22,21 @@ export const StatList = styled.ul`
   display: flex;
   justify-content: center;
 `;
-
+const getBackgroundColor = props => {
+  switch (props.color) {
+    case '.docx':
+      return 'DarkTurquoise';
+    case '.pdf':
+      return 'DodgerBlue';
+    case '.mp3':
+      return 'Cyan';
+    case '.psd':
+      return 'Aquamarine';
+  }
+};
 export const Item = styled.li`
   text-align: center;
   width: 100%;
   padding: 25px;
+  background-color: ${getBackgroundColor};
 `;

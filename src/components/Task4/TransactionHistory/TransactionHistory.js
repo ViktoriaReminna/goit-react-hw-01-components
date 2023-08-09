@@ -1,29 +1,30 @@
 // import { StatsList } from '../ProfileStatsList/ProfStatsList';
-// import { Card, Avatar, Name, Tag, Location } from './Profile.styled';
-export const TransactionHistory = ({ items: {} }) => {
+import {
+  TransactionTable,
+  TableHeader,
+  Tbody,
+} from './TransactionHistory.styled';
+const TransactionHistory = ({ items }) => {
   return (
-    <table class="transaction-history">
-      <thead>
+    <TransactionTable className="transaction-history">
+      <TableHeader>
         <tr>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Invoice</td>
-          <td>125</td>
-          <td>USD</td>
-        </tr>
-        <tr>
-          <td>Withdrawal</td>
-          <td>85</td>
-          <td>USD</td>
-        </tr>
-      </tbody>
-    </table>
+      </TableHeader>
+      <Tbody>
+        {items.map(transaction => (
+          <tr key={transaction.id}>
+            <td>{transaction.type}</td>
+            <td>{transaction.amount}</td>
+            <td>{transaction.currency}</td>
+          </tr>
+        ))}
+      </Tbody>
+    </TransactionTable>
   );
 };
+
 export default TransactionHistory;
