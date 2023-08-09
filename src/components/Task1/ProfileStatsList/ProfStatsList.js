@@ -1,6 +1,7 @@
+import { Stats } from './ProfStatList.styled';
 export const StatsList = ({ stats: { followers, views, likes } }) => {
   return (
-    <ul className="stats">
+    <Stats className="stats">
       <li>
         <span className="label">followers</span>
         <span className="quantity">{followers}</span>
@@ -13,6 +14,6 @@ export const StatsList = ({ stats: { followers, views, likes } }) => {
         <span className="label">Likes</span>
         <span className="quantity">{likes}</span>
       </li>
-    </ul>
+    </Stats>
   );
 };
