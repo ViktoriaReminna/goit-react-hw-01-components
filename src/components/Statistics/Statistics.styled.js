@@ -32,6 +32,8 @@ const getBackgroundColor = props => {
       return 'Cyan';
     case '.psd':
       return 'Aquamarine';
+    default:
+      return 'black';
   }
 };
 export const Item = styled.li`
