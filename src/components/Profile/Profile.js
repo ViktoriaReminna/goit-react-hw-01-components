@@ -1,4 +1,4 @@
-import { StatsList } from '../ProfileStatsList/ProfStatsList';
+import { StatsList } from 'components/ProfileStatsList/ProfStatsList';
 import { Card, Avatar, Name, Tag, Location } from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (

@@ -1,4 +1,3 @@
-// import { StatsList } from '../ProfileStatsList/ProfStatsList';
 import {
   TransactionTable,
   TableHeader,

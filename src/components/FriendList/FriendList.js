@@ -1,4 +1,4 @@
-import { FriendListItem } from 'components/Task3/FriendListItem/FriendListItem';
+import { FriendListItem } from 'components//FriendListItem/FriendListItem';
 import { StyledFriendList } from './FriendList.styled';
 export const FriendList = ({ friends }) => {
   return (
